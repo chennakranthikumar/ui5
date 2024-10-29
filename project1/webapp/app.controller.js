@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
 	"sap/m/MessageToast",
-    "sap/m/Button"
-], (Controller, MessageToast, Button) => {
+    "sap/m/Button",
+	"sap/ui/model/json/JSONModel"
+], (Controller, MessageToast, Button , JSONModel ) => {
 	"use strict";
 
 	
@@ -13,6 +14,10 @@ sap.ui.define([
 			//console.log(oPage);
 			oPage.addContent(oBut);
 			//oPage.addContent(oInput);
+			var Odata = sap.ui.getCore().getModel("userModel").getData();
+			var oModel = new JSONModel(Odata);
+			this.getView().setModel(oModel,"Odata");
+			console.log(Odata);
         },
 		onPress() {
 			MessageToast.show("Hello App!");

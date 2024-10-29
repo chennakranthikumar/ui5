@@ -3,13 +3,16 @@
 	displayBlock="true"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<App>
+	<Shell>
+	<App id="app">
 		<Page title="App view" id="view1">
 			<Button
 				text="Steady..."
 				press=".onPress"
 				type="Emphasized"
 				class="sapUiSmallMargin"/>
-		</Page>
+				<Input placeholder="{userModel>/user/1/name}"></Input>
+		</Page>    
 	</App>
+	</Shell>  
 </mvc:View>

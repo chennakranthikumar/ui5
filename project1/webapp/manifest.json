@@ -1,21 +1,30 @@
 {
     "_version": "1.58.0",
     "sap.app": {
-      "id": "ui5.project1"
+        "id": "ui5.project1"
     },
 
     "sap.ui5": {
+        "rootView": {
+            "viewname": "ui5.project1.createButoons",
+            "type": "XML",
+            "async": true,
+            "id": "app"
+        },
         "routing": {
             "config": {
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
-                "viewPath": "ui5.project1.createButoons",
+                "viewPath": "ui5.project1",
                 "controlId": "app",
                 "controlAggregation": "pages",
                 "async": true
             },
-            "routes": [
-
+            "routes": [{
+                    "pattern": "",
+                    "name": "Home",
+                    "target": "Home"
+                },
                 {
                     "pattern": "calculator",
                     "name": "calculator",
@@ -23,6 +32,10 @@
                 }
             ],
             "targets": {
+                "Home": {
+                    "viewName": "createButoons",
+                    "viewLevel": 1
+                },
                 "calculator": {
                     "viewName": "Calculator",
                     "viewLevel": 2
