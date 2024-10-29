@@ -6,14 +6,14 @@
 
     "sap.ui5": {
         "rootView": {
-            "viewname": "ui5.project1.createButoons",
+            "viewname": "ui5.project1.rootView",
             "type": "XML",
             "async": true,
             "id": "app"
         },
         "routing": {
             "config": {
-                "routerClass": "sap.m.routing.Router",
+                "routerClass": "sap.m.routing.Router.rootView",
                 "viewType": "XML",
                 "viewPath": "ui5.project1",
                 "controlId": "app",
@@ -33,11 +33,11 @@
             ],
             "targets": {
                 "Home": {
-                    "viewName": "createButoons",
+                    "viewName": "rootView",
                     "viewLevel": 1
                 },
                 "calculator": {
-                    "viewName": "Calculator",
+                    "viewName": "calculator",
                     "viewLevel": 2
                 }
             }

@@ -54,8 +54,7 @@ sap.ui.define([
             },
             toCalculator: function () {
                     console.log('navigation to calculator ');
-                    var oRouter = this.getOwnerComponent().getRouter();
-                    oRouter.navTo("calculator");
+                    this.getOwnerComponent().getRouter().navTo("calculator");
             },
 
 
