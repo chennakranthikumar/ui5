@@ -1,0 +1,7 @@
+<mvc:View
+	controllerName="ui5.project1.createButoons"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+    <VBox id="CreatBut" ></VBox>
+</mvc:View>
